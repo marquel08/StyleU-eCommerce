@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.html">
-    <script defer src="login.html"></script>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css" />
+
 </head>
 
 <body>
@@ -15,19 +16,19 @@
         <li><a href="store.html">STORE</a></li>
         <li><a href="about.html">ABOUT</a></li>
     </ul>
-    <main id="main-holder">
-        <h1 id="login-header">Login</h1>
 
-        <form id="login-form">
-            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"> <br>
-            <br>
-            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-            <br> <br>
-            <input type="button" value="Login" onclick='login.html' <button class="submit"></button>
-            <button class="register">SignUp</button>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="">
+            <input type="text" name="username" id="username" placeholder="username">
+            <input type="password" name="pass" id="pass" placeholder="password">
+            <div class="btns">
+                <button type="submit">Login</button>
+                <a href="./signup.html"><button type="button" id="sign-up">Sign Up</button></a>
+            </div>
+
         </form>
-
-    </main>
+    </div>
 </body>
 
 </html>
