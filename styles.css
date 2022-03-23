@@ -71,6 +71,7 @@ html, body {
 .container {
     max-width: 900px;
     margin: 0 auto;
+    text-align: center;
     padding: 0 1.5em;
 }
 .section-header {
@@ -84,29 +85,16 @@ html, body {
 
 .main-footer {
     background-color: #050505;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: .25em 0;
+    margin-top:  540px;
 }
 
 .main-footer-container {
-    display: flex;
+    display:flex;
     align-items: center;
+    
 }
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-.footer-nav img {
-    width: 30px;
-    height: 30px;
-}
-
 
 .shop-item {
     margin: 30px;
@@ -277,7 +265,7 @@ html, body {
     outline: none;
     cursor: pointer;
     background:#383838;
-    color: rgb(3, 3, 3);
+    color: #fff;
     text-transform: capitalize;
     font-size: 15px;
     border-top-right-radius: 10px;
@@ -294,4 +282,39 @@ html, body {
 
 .nav-item a img{
     width: 30px;
+}
+
+/* collections */
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection{
+    position:relative;
+}
+
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
 }
