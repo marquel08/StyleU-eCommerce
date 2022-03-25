@@ -51,7 +51,7 @@ html, body {
     justify-content: center;
 }
 
-.band-name {
+.company-name {
     text-align: center;
     margin: 0;
     font-size: 4em;
@@ -60,7 +60,7 @@ html, body {
     color: white;
 }
 
-.band-name-large {
+.company-name-large {
     font-size: 8em;
 }
 
